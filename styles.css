@@ -1,0 +1,289 @@
+/* Universal Style */
+html {
+    font-size: 12px;
+    font-family: 'open-sans', sans-serif;
+}
+
+main, header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* main {
+    background-color: rgba(255, 255, 255, 0.95);
+} */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    border: none;
+}
+
+/* banner styles */
+header {
+    margin-bottom: 2px;
+}
+
+h1 {
+    color: rgba(34, 49, 39);
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 1rem;
+}
+
+h1 span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    color: rgba(156, 13, 56);
+}
+
+.logo-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 0.5px solid rgba(1, 23, 47, 1);
+}
+
+.sign-in-btn {  
+    font-size: 0.6rem;
+    color: #fff;
+    border-radius: 0.1rem;
+    padding: 0.2rem 1rem;
+    background-color: #9C0D38;
+}
+
+.nav-container {   
+    padding: 0.5rem 0;
+}
+
+/* .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+} */
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;  
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    
+}
+
+.navbar ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navbar ul li:active {
+    background-color: rgba(1, 23, 47, 0.3);
+    text-decoration: none;
+}
+
+/* about secion */
+
+.hero-container h2 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 100%;
+    border-radius: 2rem;
+    margin-bottom: 5px;
+    background-image: url(./resources/images/lib_img4.png);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.number-container {
+    display: flex;
+    width: 50%;
+    padding: 1rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem; 
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #000;
+
+}
+
+.number-container ul {
+    width: 50%;
+    text-align: center;
+}
+
+.number-container li {
+    list-style: none;   
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.liststyle {
+    border: 1px solid #000;
+    background-image: url(./resources/images/number_1.jpeg);
+    background-size: cover;
+}
+
+.liststyle span {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* fiction section */
+
+.book-container {
+    display: grid;
+    border-radius: 1rem;
+    width: 90%;
+    height: 20rem;  
+    padding: 0 0.4rem;
+    grid-template: 1fr 3fr 1fr / repeat(4, 1fr);
+    margin-top: 0.3rem;
+    overflow: hidden;
+    transition-property: background-color;
+    transition-duration: 2s;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* .book-container:hover {
+    background-color: rgba(206, 83, 116, 0.5);
+} */
+
+#fiction, #non-fiction, #poetry {
+    grid-column: 1 / 5;  
+    align-self: center;
+}
+
+.grid-title {
+    float: left;
+}
+
+.grid-filter {
+    float: right;
+}
+
+.style {
+    border-radius: 0.3rem;
+    padding: 0.2rem;
+}
+
+.two, .three, .four, .five {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two:hover, .three:hover, .four:hover, .five:hover {
+    background-color: rgba(233, 236, 239);
+    border-radius: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    max-height: 11rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: max-height 300ms ease-in 50ms;
+}
+
+img:hover {
+    max-height: 11.5rem;
+}
+
+.book-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action-save {
+    margin-bottom: 0.3rem;
+}
+
+.savebtn button, .downloadbtn button {
+    font-size: 0.8rem;
+    width: 5rem;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: .5rem;
+    /* padding: 0.2rem; */
+    background-color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.savebtn button:hover, 
+.savebtn button:focus-visible {
+    width: 5.5rem;
+    background-color: #7654BF50;
+}
+
+.downloadbtn button:hover, 
+.downloadbtn button:focus-visible {
+    width: 5.5rem;
+    background-color: #026FEB50;
+}
+
+/* Button Transition */
+
+/* .downloadbtn button {
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: rgba(206, 83, 116, 0.2);
+}
+
+.downloadbtn span {
+    position: relative;
+    width: 75%;
+}
+
+
+.icon {
+    background-color: rgba(206, 83, 116, 0.5);
+    position: relative;
+    width: 25%;
+    padding: 0 0.2rem;
+}
+
+button:hover span {
+    color: rgba(206, 83, 116, 0 );
+    width: 0%;
+}
+
+button:hover .icon {
+    width: 100%;
+}
+
+button, button span, button .icon {
+    transition: width 500ms ease-in 200ms, color 500ms ease-out 450ms;
+} 
